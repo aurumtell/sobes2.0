@@ -74,7 +74,7 @@ public class AuthController {
     }
 
     @PostMapping("/auth/recovery")
-    public ProfileResponse recoveryAccount(@RequestBody AuthRequest authRequest) {
+    public ResponseEntity<?> recoveryAccount(@RequestBody AuthRequest authRequest) {
         return authService.recoveryAccount(authRequest.getEmail(), authRequest.getPassword());
     }
 

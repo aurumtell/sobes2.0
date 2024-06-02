@@ -164,13 +164,13 @@ public class AuthService {
     }
 
     @Transactional
-    public ProfileResponse recoveryAccount(String email, String password) {
+    public ResponseEntity<?> recoveryAccount(String email, String password) {
         if (!userRepository.existsByEmail(email)) {
             throw new MyEntityNotFoundException("email");
         }
         UserEntity user = findUserByEmail(email);
         user.setPasswordHash(encoder.encode(password));
         userRepository.save(user);
-        return new ProfileResponse(user);
+        return authenticateUser(new AuthRequest(email, password));
     }
 }

@@ -53,7 +53,9 @@ public class YandexGPTService {
     public List<GenerateResponse> generateQuestions(String message) throws JsonProcessingException {
         ChatRequest.CompletionOptions completionOptions = new ChatRequest.CompletionOptions(false, 0.3, 1000);
         String system = "Ты — рекрутер. Имитируй собеседование на работу для указанной должности и желаемого уровня профессии, задавая вопросы, как будто ты потенциальный работодатель. " +
-                "Твоя задача — определить технические и коммуникационные навыки кандидата. Сгенерируй 5 вопросов для интервью с потенциальным кандидатом. Результат верни только в формате JSON-массива без каких-либо пояснений, такие параметры должны быть: [{\\\"question\\\": \\\"вопрос\\\"}]. Отправь только JSON-массив без дополнительных предложений, начни ответ со скобок массива и закончи им";
+                "Твоя задача — определить технические и коммуникационные навыки кандидата. Сгенерируй 5 вопросов для интервью с потенциальным кандидатом. " +
+                "Результат верни только в формате JSON-массива без каких-либо пояснений, такие параметры должны быть: [{\"question\": \"вопрос\"}]. " +
+                "Отправь только JSON-массив без дополнительных предложений, начни ответ со скобок массива и закончи им.";
         ChatRequest chatRequest = ChatRequest.createWithUserAndSystemMessages("gpt://b1g1co7b2khdfuvhtsfc/yandexgpt", message, system, completionOptions);
         ChatResponse response = sendRequest(chatRequest);
         String result = ChatResponse.extractAssistantMessage(response);
