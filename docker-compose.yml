@@ -1,0 +1,76 @@
+version: '3.9'
+
+services:
+  auth-server:
+    build:
+      context: auth-service/
+      dockerfile: build/Dockerfile
+    image: auth-server:latest
+    ports:
+      - 8082:8082
+    networks:
+      - sobes-net
+
+  content-server:
+    build:
+      context: content-service/
+      dockerfile: build/Dockerfile
+    image: content-server:latest
+    ports:
+      - 8083:8083
+    networks:
+      - sobes-net
+
+  interview-server:
+    build:
+      context: interview-service/
+      dockerfile: build/Dockerfile
+    image: interview-server:latest
+    ports:
+      - 8084:8084
+    networks:
+      - sobes-net
+
+  chat-server:
+    build:
+      context: chat-service/
+      dockerfile: build/Dockerfile
+    image: chat-server:latest
+    ports:
+      - 8085:8085
+    networks:
+      - sobes-net
+
+  gateway-server:
+    build:
+      context: gateway-service/
+      dockerfile: build/Dockerfile
+    image: gateway-server:latest
+    ports:
+      - 8080:8080
+    networks:
+      - sobes-net
+
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: "sobes_db"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    volumes:
+      - db-data1:/var/lib/postgresql/data
+    ports:
+      - "5435:5432"
+    networks:
+      - sobes-net
+
+volumes:
+  db-data1:
+    driver: local
+
+
+networks:
+  sobes-net:
+    driver: bridge
+

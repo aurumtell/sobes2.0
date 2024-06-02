@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="auth-service:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="414612c6-3a7b-4152-9643-6e71c4ff976e" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f051330-7aa6-40ed-8c6a-07a45c521417.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f051330-7aa6-40ed-8c6a-07a45c521417.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f051330-7aa6-40ed-8c6a-07a45c521417/storage_v2/_src_/database/sobes_db.6cP6Rg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f051330-7aa6-40ed-8c6a-07a45c521417/storage_v2/_src_/database/sobes_db.6cP6Rg/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/736cbe4d-3552-4c96-b06e-a62aa7d1ce64.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/736cbe4d-3552-4c96-b06e-a62aa7d1ce64.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/736cbe4d-3552-4c96-b06e-a62aa7d1ce64/storage_v2/_src_/database/sobes_db.6cP6Rg/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/736cbe4d-3552-4c96-b06e-a62aa7d1ce64/storage_v2/_src_/database/sobes_db.6cP6Rg/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/736cbe4d-3552-4c96-b06e-a62aa7d1ce64/storage_v2/_src_/database/sobes_db.6cP6Rg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/736cbe4d-3552-4c96-b06e-a62aa7d1ce64/storage_v2/_src_/database/sobes_db.6cP6Rg/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/736cbe4d-3552-4c96-b06e-a62aa7d1ce64/storage_v2/_src_/database/sobes_db.6cP6Rg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/736cbe4d-3552-4c96-b06e-a62aa7d1ce64/storage_v2/_src_/database/sobes_db.6cP6Rg/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/auth/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/auth/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/auth-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/auth-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/auth-service-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/auth-service-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/auth/service/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/com/auth/service/AuthService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-service/src/main/java/com/chat/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/src/main/java/com/chat/controller/ChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-service/src/main/java/com/chat/security/WebSocketAuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/src/main/java/com/chat/security/WebSocketAuthInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-service/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-service/target/chat-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/target/chat-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-service/target/chat-service-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/target/chat-service-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-service/target/classes/com/chat/controller/ChatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/target/classes/com/chat/controller/ChatController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-service/target/classes/com/chat/security/WebSocketAuthInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/target/classes/com/chat/security/WebSocketAuthInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-service/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/target/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/target/content-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/target/content-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/target/content-service-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/target/content-service-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/target/gateway-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/target/gateway-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/target/gateway-service-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/target/gateway-service-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview-service/src/main/java/com/interview/repo/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/interview-service/src/main/java/com/interview/repo/QuestionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview-service/src/main/java/com/interview/service/YandexGPTService.java" beforeDir="false" afterPath="$PROJECT_DIR$/interview-service/src/main/java/com/interview/service/YandexGPTService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview-service/target/classes/com/interview/repo/QuestionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/interview-service/target/classes/com/interview/repo/QuestionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview-service/target/classes/com/interview/service/YandexGPTService.class" beforeDir="false" afterPath="$PROJECT_DIR$/interview-service/target/classes/com/interview/service/YandexGPTService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview-service/target/interview-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/interview-service/target/interview-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview-service/target/interview-service-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/interview-service/target/interview-service-1.0-SNAPSHOT.jar.original" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;author&quot;: &quot;aurumtell&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;author&quot;: &quot;aurumtell&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a85bb39d-2640-4bdd-a9e6-6ae81626e266" />
+        <option name="url" value="git@github.com:aurumtell/sobes.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2fKXaQu1TzE2gQoSEiURGfKK27d" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "graalvm-jdk-17",
+    "last_opened_file_path": "/Users/d.a.tasbauova/IdeaProjects/sobes2.0/sobes",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "76a188d396099a70d1a4db8e7ab9d7b9",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content-service/src/main/java/com/content" />
+      <recent name="$PROJECT_DIR$/chat-service/src/main/resources" />
+      <recent name="$PROJECT_DIR$/chat-service/src/main/java/com/chat" />
+      <recent name="$PROJECT_DIR$/content-service/src/main/java/com/content/repo" />
+      <recent name="$PROJECT_DIR$/content-service/src/main/java/com/content/model" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.chat.repo" />
+      <recent name="com.hse.security.jwt" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.auth.security" />
+      <recent name="com.auth.repo" />
+      <recent name="com.auth.model.entity" />
+      <recent name="com.chat.repo" />
+      <recent name="com.chat.model.entity" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Makefile Target.build">
+    <configuration name="AuthControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auth-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.auth.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.auth.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.auth.controller.AuthControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthControllerTest.authenticateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auth-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.auth.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.auth.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.auth.controller.AuthControllerTest" />
+      <option name="METHOD_NAME" value="authenticateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auth-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.auth.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.auth.service" />
+      <option name="MAIN_CLASS_NAME" value="com.auth.service.AuthServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceTest.authenticateUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auth-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.auth.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.auth.service" />
+      <option name="MAIN_CLASS_NAME" value="com.auth.service.AuthServiceTest" />
+      <option name="METHOD_NAME" value="authenticateUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="build" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="build" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="ChatService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="chat-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chat.ChatService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContentService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="content-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.content.ContentService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hse.GatewayService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterviewService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="interview-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.interview.InterviewService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hse.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfileService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.auth.ProfileService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.AuthControllerTest" />
+      <item itemvalue="JUnit.AuthControllerTest.authenticateUser" />
+      <item itemvalue="JUnit.AuthServiceTest" />
+      <item itemvalue="JUnit.AuthServiceTest.authenticateUserTest" />
+      <item itemvalue="Makefile Target.build" />
+      <item itemvalue="Spring Boot.ContentService" />
+      <item itemvalue="Spring Boot.GatewayService" />
+      <item itemvalue="Spring Boot.InterviewService" />
+      <item itemvalue="Spring Boot.ProfileService" />
+      <item itemvalue="Spring Boot.ChatService" />
+      <item itemvalue="Spring Boot.Main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Makefile Target.build" />
+        <item itemvalue="JUnit.AuthControllerTest" />
+        <item itemvalue="JUnit.AuthControllerTest.authenticateUser" />
+        <item itemvalue="JUnit.AuthServiceTest.authenticateUserTest" />
+        <item itemvalue="JUnit.AuthServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="414612c6-3a7b-4152-9643-6e71c4ff976e" name="Changes" comment="" />
+      <created>1713550806897</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713550806897</updated>
+      <workItem from="1713550808212" duration="7137000" />
+      <workItem from="1713727182611" duration="5091000" />
+      <workItem from="1713767264251" duration="41546000" />
+      <workItem from="1713979277728" duration="331000" />
+      <workItem from="1713979958525" duration="2157000" />
+      <workItem from="1713982129597" duration="34531000" />
+      <workItem from="1714040535495" duration="608000" />
+      <workItem from="1714390013889" duration="55019000" />
+      <workItem from="1715013748840" duration="29747000" />
+      <workItem from="1715520463109" duration="3288000" />
+      <workItem from="1715537400129" duration="19308000" />
+      <workItem from="1715708951411" duration="452000" />
+      <workItem from="1715709445629" duration="34000" />
+      <workItem from="1715709489430" duration="370000" />
+      <workItem from="1715709934849" duration="236000" />
+      <workItem from="1715710267465" duration="7013000" />
+      <workItem from="1715717907332" duration="82000" />
+      <workItem from="1715718535167" duration="816000" />
+      <workItem from="1715774881815" duration="21448000" />
+      <workItem from="1715870544006" duration="11942000" />
+      <workItem from="1715965732029" duration="6247000" />
+      <workItem from="1717330122978" duration="4037000" />
+      <workItem from="1717337377292" duration="313000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1713801045986</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713801045986</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/interview-service/src/main/java/com/interview/model/request/ChatRequest.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

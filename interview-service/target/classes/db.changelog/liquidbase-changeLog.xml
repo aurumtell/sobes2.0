@@ -1,0 +1,250 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+    <!-- ChangeSet for creating the Levels table -->
+    <changeSet id="2023-05-levels-table-creation" author="dayana">
+        <sql>
+            CREATE TABLE IF NOT EXISTS levels (
+                                                  id SERIAL PRIMARY KEY,
+                                                  experience VARCHAR(255) NOT NULL
+                );
+        </sql>
+    </changeSet>
+
+    <changeSet id="user-role-table-creation" author="dayana">
+        <sql>
+            CREATE TABLE IF NOT EXISTS roles (
+                                                 id SERIAL PRIMARY KEY,
+                                                 role_user VARCHAR(50) NOT NULL
+                )
+        </sql>
+    </changeSet>
+
+    <!-- ChangeSet for creating the Users table -->
+    <changeSet id="2023-01-user-table-creation" author="dayana">
+        <sql>
+            CREATE TABLE IF NOT EXISTS users (
+                                                 id SERIAL PRIMARY KEY,
+                                                 username VARCHAR(225),
+                email VARCHAR(225) UNIQUE,
+                passwordHash VARCHAR(225),
+                registrationDate TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NOW(),
+                levelId INTEGER,
+                code VARCHAR(225),
+                codeSentAt TIMESTAMP(0) WITHOUT TIME ZONE,
+                verify BOOLEAN,
+                roleId INTEGER,
+                FOREIGN KEY (roleId) REFERENCES roles(id),
+                FOREIGN KEY (levelId) REFERENCES levels(id)
+                );
+        </sql>
+    </changeSet>
+
+
+    <changeSet id="refresh-table-creation" author="dayana">
+        <sql>
+            CREATE TABLE IF NOT EXISTS refresh (
+                                                   id SERIAL PRIMARY KEY,
+                                                   userId INTEGER,
+                                                   token TEXT,
+                                                   expiryDate TEXT,
+                                                   FOREIGN KEY (userId) REFERENCES users(id)
+                )
+        </sql>
+    </changeSet>
+
+    <!-- ChangeSet for creating the Profiles table -->
+
+    <!-- ChangeSet for creating the Professions table -->
+    <changeSet id="2023-04-professions-table-creation" author="dayana">
+        <sql>
+            CREATE TABLE IF NOT EXISTS professions (
+                                                       id SERIAL PRIMARY KEY,
+                                                       profession VARCHAR(255) NOT NULL
+                );
+        </sql>
+    </changeSet>
+
+    <changeSet id="2023-04-insert-professions" author="dayana">
+        <sql>
+            INSERT INTO professions (profession) VALUES
+                                                     ('Менеджер продукта'),
+                                                     ('Менеджер проекта'),
+                                                     ('Бизнес-аналитик');
+        </sql>
+    </changeSet>
+
+
+
+
+    <changeSet id="2023-04-insert-levels" author="dayana">
+        <sql>
+            INSERT INTO levels (experience) VALUES
+                                                ('Стажировка'),
+                                                ('Jun/Jun+'),
+                                                ('Middle/Middle+'),
+                                                ('Senior');
+        </sql>
+    </changeSet>
+
+
+    <!-- ChangeSet for creating the Companies table -->
+    <changeSet id="2023-06-companies-table-creation" author="dayana">
+        <sql>
+            CREATE TABLE IF NOT EXISTS companies (
+                                                     id SERIAL PRIMARY KEY,
+                                                     company VARCHAR(255) NOT NULL
+                );
+        </sql>
+    </changeSet>
+
+    <changeSet id="2023-04-insert-companies" author="dayana">
+        <sql>
+            INSERT INTO companies (company) VALUES
+                                                ('Тинькофф'),
+                                                ('Яндекс'),
+                                                ('Другое')
+        </sql>
+    </changeSet>
+
+    <!-- ChangeSet for creating the UserCompanies table -->
+    <changeSet id="2023-07-usercompanies-table-creation" author="dayana">
+        <sql>
+            CREATE TABLE IF NOT EXISTS user_companies (
+                                                          userId INTEGER NOT NULL,
+                                                          companyId INTEGER NOT NULL,
+                                                          FOREIGN KEY (userId) REFERENCES users(id),
+                FOREIGN KEY (companyId) REFERENCES companies(id)
+                );
+        </sql>
+    </changeSet>
+
+    <changeSet id="2023-07-userprofessions-table-creation" author="dayana">
+        <sql>
+            CREATE TABLE IF NOT EXISTS user_professions (
+                                                            userId INTEGER NOT NULL,
+                                                            professionId INTEGER NOT NULL,
+                                                            FOREIGN KEY (userId) REFERENCES users(id),
+                FOREIGN KEY (professionId) REFERENCES professions(id)
+                );
+        </sql>
+    </changeSet>
+
+    <!-- ChangeSet for creating the Articles table -->
+    <changeSet id="2023-08-articles-table-creation" author="dayana">
+        <sql>
+            CREATE TABLE IF NOT EXISTS articles (
+                                                    id SERIAL PRIMARY KEY,
+                                                    professionId INTEGER NOT NULL,
+
+                                                    title VARCHAR(255) NOT NULL,
+                author VARCHAR(255),
+                content TEXT NOT NULL,
+                link VARCHAR(255),
+                FOREIGN KEY (professionId) REFERENCES professions(id)
+                );
+        </sql>
+    </changeSet>
+
+    <changeSet id="2023-08-insert-articles" author="dayana">
+        <sql>
+            INSERT INTO articles (professionId, title, author, content, link) VALUES
+                                                                                  (1, 'Статья 1', 'Автор 1', 'Содержание статьи 1', 'https://example.com/article1'),
+                                                                                  (2, 'Статья 2', 'Автор 2', 'Содержание статьи 2', 'https://example.com/article2'),
+                                                                                  (3, 'Статья 3', 'Автор 3', 'Содержание статьи 3', 'https://example.com/article3');
+        </sql>
+    </changeSet>
+
+
+    <!-- ChangeSet for creating the Advices table -->
+    <changeSet id="2023-09-advices-table-creation" author="dayana">
+        <sql>
+            CREATE TABLE IF NOT EXISTS advices (
+                                                   id SERIAL PRIMARY KEY,
+                                                   companyId INTEGER NOT NULL,
+                                                   professionId INTEGER NOT NULL,
+                                                   employeeName VARCHAR(255) NOT NULL,
+                employeeLevel VARCHAR(255),
+                text TEXT NOT NULL,
+                FOREIGN KEY (professionId) REFERENCES professions(id),
+                FOREIGN KEY (companyId) REFERENCES companies(id)
+                );
+        </sql>
+    </changeSet>
+
+    <changeSet id="2023-08-insert-advises" author="dayana">
+        <sql>
+            INSERT INTO advices (professionId, companyId, employeeName, employeeLevel, text) VALUES
+                                                                                                 (1, 1, 'Иван Иванов', 'Старший', 'Тщательно подготовьтесь, изучив компанию, ее отрасль и типичные вопросы на собеседовании.'),
+                                                                                                 (1, 2, 'Анна Петрова', 'Менеджер', 'Подчеркните свои аналитические навыки, предоставив конкретные примеры решения проблем и принятия решений.'),
+                                                                                                 (2, 2, 'Михаил Сидоров', 'Лидер', 'Продемонстрируйте свое стратегическое мышление, обсудив свой опыт в планировании продукта и его приоритизации.'),
+                                                                                                 (2, 1, 'Екатерина Иванова', 'Директор', 'Проявите свои лидерские качества, рассказав о успешных запусках продуктов и межфункциональном взаимодействии.'),
+                                                                                                 (3, 2, 'Алексей Смирнов', 'Руководитель проекта', 'Подчеркните свою способность управлять заинтересованными сторонами и смягчать риски, обсудив прошлые проекты и их результаты.'),
+                                                                                                 (3, 1, 'София Кузнецова', 'Программный менеджер', 'Подчеркните свои навыки коммуникации, объяснив, как вы информировали заинтересованных сторон и обеспечивали их согласованность на протяжении жизненного цикла проекта.');
+        </sql>
+    </changeSet>
+
+    <!-- ChangeSet for creating the Questions table -->
+    <changeSet id="2023-10-questions-table-creation" author="dayana">
+        <sql>
+            CREATE TABLE IF NOT EXISTS questions (
+                                                     id SERIAL PRIMARY KEY,
+                                                     userId INTEGER NOT NULL,
+                                                     content TEXT NOT NULL,
+                                                     professionId INTEGER,
+
+                                                     FOREIGN KEY (userId) REFERENCES users(id),
+                FOREIGN KEY (professionId) REFERENCES professions(id)
+                );
+        </sql>
+    </changeSet>
+
+    <!-- ChangeSet for creating the Interviews table -->
+    <changeSet id="2023-12-answers-table-creation" author="dayana">
+        <sql>
+            CREATE TABLE IF NOT EXISTS answers (
+                                                   id SERIAL PRIMARY KEY,
+                                                   questionId INTEGER NOT NULL,
+                                                   improvement TEXT,
+                                                   completeness INTEGER,
+                                                   satisfaction INTEGER,
+                                                   score DOUBLE PRECISION,
+                                                   content TEXT NOT NULL,
+                                                   answerDate TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NOW(),
+                FOREIGN KEY (questionId) REFERENCES questions(id)
+                );
+        </sql>
+    </changeSet>
+
+    <!-- ChangeSet for creating the Chats table -->
+    <changeSet id="2023-14-chats-table-creation" author="dayana">
+        <sql>
+            CREATE TABLE IF NOT EXISTS chats (
+                                                 id SERIAL PRIMARY KEY,
+                                                 participantOneId INTEGER NOT NULL,
+                                                 participantTwoId INTEGER NOT NULL,
+                                                 FOREIGN KEY (participantOneId) REFERENCES users(id),
+                FOREIGN KEY (participantTwoId) REFERENCES users(id)
+                );
+        </sql>
+    </changeSet>
+
+    <!-- ChangeSet for creating the Messages table -->
+    <changeSet id="2023-15-messages-table-creation" author="dayana">
+        <sql>
+            CREATE TABLE IF NOT EXISTS messages (
+                                                    id SERIAL PRIMARY KEY,
+                                                    chatId INTEGER NOT NULL,
+                                                    senderId INTEGER NOT NULL,
+                                                    content TEXT,
+                                                    isRead BOOLEAN,
+                                                    dateMessage TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NOW(),
+                FOREIGN KEY (chatId) REFERENCES chats(id),
+                FOREIGN KEY (senderId) REFERENCES users(id)
+                );
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
