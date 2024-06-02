@@ -9,40 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="414612c6-3a7b-4152-9643-6e71c4ff976e" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f051330-7aa6-40ed-8c6a-07a45c521417.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f051330-7aa6-40ed-8c6a-07a45c521417.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f051330-7aa6-40ed-8c6a-07a45c521417/storage_v2/_src_/database/sobes_db.6cP6Rg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f051330-7aa6-40ed-8c6a-07a45c521417/storage_v2/_src_/database/sobes_db.6cP6Rg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/736cbe4d-3552-4c96-b06e-a62aa7d1ce64.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/736cbe4d-3552-4c96-b06e-a62aa7d1ce64.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/736cbe4d-3552-4c96-b06e-a62aa7d1ce64/storage_v2/_src_/database/sobes_db.6cP6Rg/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/736cbe4d-3552-4c96-b06e-a62aa7d1ce64/storage_v2/_src_/database/sobes_db.6cP6Rg/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/736cbe4d-3552-4c96-b06e-a62aa7d1ce64/storage_v2/_src_/database/sobes_db.6cP6Rg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/736cbe4d-3552-4c96-b06e-a62aa7d1ce64/storage_v2/_src_/database/sobes_db.6cP6Rg/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/736cbe4d-3552-4c96-b06e-a62aa7d1ce64/storage_v2/_src_/database/sobes_db.6cP6Rg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/736cbe4d-3552-4c96-b06e-a62aa7d1ce64/storage_v2/_src_/database/sobes_db.6cP6Rg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/auth/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/auth/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/auth-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/auth-service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/auth-service-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/auth-service-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/auth/service/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/com/auth/service/AuthService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-service/src/main/java/com/chat/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/src/main/java/com/chat/controller/ChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-service/src/main/java/com/chat/security/WebSocketAuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/src/main/java/com/chat/security/WebSocketAuthInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-service/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-service/target/chat-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/target/chat-service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-service/target/chat-service-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/target/chat-service-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-service/target/classes/com/chat/controller/ChatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/target/classes/com/chat/controller/ChatController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-service/target/classes/com/chat/security/WebSocketAuthInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/target/classes/com/chat/security/WebSocketAuthInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-service/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/target/content-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/target/content-service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/target/content-service-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/target/content-service-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/target/gateway-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/target/gateway-service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/target/gateway-service-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/target/gateway-service-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview-service/src/main/java/com/interview/repo/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/interview-service/src/main/java/com/interview/repo/QuestionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview-service/src/main/java/com/interview/service/YandexGPTService.java" beforeDir="false" afterPath="$PROJECT_DIR$/interview-service/src/main/java/com/interview/service/YandexGPTService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview-service/target/classes/com/interview/repo/QuestionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/interview-service/target/classes/com/interview/repo/QuestionRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview-service/target/classes/com/interview/service/YandexGPTService.class" beforeDir="false" afterPath="$PROJECT_DIR$/interview-service/target/classes/com/interview/service/YandexGPTService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview-service/target/interview-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/interview-service/target/interview-service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview-service/target/interview-service-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/interview-service/target/interview-service-1.0-SNAPSHOT.jar.original" afterDir="false" />
-    </list>
+    <list default="true" id="414612c6-3a7b-4152-9643-6e71c4ff976e" name="Changes" comment="first commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +24,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;history&quot;: [
@@ -325,7 +292,7 @@
       <workItem from="1715870544006" duration="11942000" />
       <workItem from="1715965732029" duration="6247000" />
       <workItem from="1717330122978" duration="4037000" />
-      <workItem from="1717337377292" duration="313000" />
+      <workItem from="1717337377292" duration="4489000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1713801045986</created>

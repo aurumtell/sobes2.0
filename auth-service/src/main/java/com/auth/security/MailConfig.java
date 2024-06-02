@@ -14,8 +14,8 @@ public class MailConfig {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
         mailSender.setHost("smtp.yandex.ru");
         mailSender.setPort(587);
-        mailSender.setUsername("dayana.astana");
-        mailSender.setPassword("waqwapypfsjtpfyb");
+        mailSender.setUsername("sobesApp");
+        mailSender.setPassword("rbtwmjiukuedridp");
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");

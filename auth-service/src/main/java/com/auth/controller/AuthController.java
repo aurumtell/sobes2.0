@@ -5,6 +5,7 @@ import com.auth.model.entity.RefreshToken;
 import com.auth.model.entity.UserEntity;
 import com.auth.model.request.*;
 import com.auth.model.response.MessageResponse;
+import com.auth.model.response.ProfileResponse;
 import com.auth.model.response.TokenRefreshResponse;
 import com.auth.security.jwt.JwtUtils;
 import com.auth.security.services.UserDetailsImpl;
@@ -73,7 +74,7 @@ public class AuthController {
     }
 
     @PostMapping("/auth/recovery")
-    public ResponseEntity<?> recoveryAccount(@RequestBody AuthRequest authRequest) {
+    public ProfileResponse recoveryAccount(@RequestBody AuthRequest authRequest) {
         return authService.recoveryAccount(authRequest.getEmail(), authRequest.getPassword());
     }
 

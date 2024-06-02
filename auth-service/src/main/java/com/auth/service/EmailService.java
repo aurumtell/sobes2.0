@@ -12,7 +12,7 @@ public class EmailService {
 
     public void sendRegistrationConfirmationEmail(String to, String code) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("dayana.astana@yandex.ru");
+        message.setFrom("sobesApp@yandex.ru");
         message.setTo(to);
         message.setSubject("Registration Confirmation");
         message.setText("Thank you for registering. Please confirm your registration with this code: " + code);

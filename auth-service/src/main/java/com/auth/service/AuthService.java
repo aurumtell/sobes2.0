@@ -13,6 +13,7 @@ import com.auth.model.entity.UserEntity;
 import com.auth.model.request.AuthRequest;
 import com.auth.model.request.SignUpRequest;
 import com.auth.model.response.JwtResponse;
+import com.auth.model.response.ProfileResponse;
 import com.auth.repo.RoleRepository;
 import com.auth.repo.UserRepository;
 import com.auth.security.jwt.JwtUtils;
@@ -163,15 +164,13 @@ public class AuthService {
     }
 
     @Transactional
-    public ResponseEntity<?> recoveryAccount(String email, String password) {
+    public ProfileResponse recoveryAccount(String email, String password) {
         if (!userRepository.existsByEmail(email)) {
-            return ResponseEntity
-                    .badRequest()
-                    .body(new MessageResponse("Email does not exist!"));
+            throw new MyEntityNotFoundException("email");
         }
         UserEntity user = findUserByEmail(email);
         user.setPasswordHash(encoder.encode(password));
         userRepository.save(user);
-        return ResponseEntity.ok().body(new MessageResponse("Password changed successfully!"));
+        return new ProfileResponse(user);
     }
 }
