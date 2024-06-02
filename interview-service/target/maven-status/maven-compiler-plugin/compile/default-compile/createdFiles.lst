@@ -24,6 +24,7 @@ com/interview/model/request/MessageRequest.class
 com/interview/controller/InterviewController.class
 com/interview/model/response/ChatResponse$Result$Alternative.class
 com/interview/model/request/ChatRequest$Message.class
+com/interview/service/QuestionService$1.class
 com/interview/security/AuthTokenFilter.class
 com/interview/model/entity/QuestionEntity.class
 com/interview/exception/ExpiredJwtException.class

@@ -20,6 +20,8 @@ import org.springframework.transaction.annotation.Transactional;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @Service
 public class QuestionService {
@@ -47,42 +49,7 @@ public class QuestionService {
         return questionRepository.save(questionEntity);
     }
 
-    public static String parseJsonToQuestion(String jsonString) {
-        String question = null;
 
-        try {
-            ObjectMapper objectMapper = new ObjectMapper();
-            JsonNode jsonNode = objectMapper.readTree(jsonString);
-
-            // Предполагаем, что jsonString представляет собой объект, содержащий ключ "question".
-            // Если jsonString представляет собой массив, вам потребуется изменить эту часть.
-            if (jsonNode.has("question")) {
-                question = jsonNode.get("question").asText();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return question;
-    }
-
-    public static Set<String> parseJsonToSet(String jsonString) {
-        Set<String> questions = new HashSet<>();
-
-        try {
-            ObjectMapper objectMapper = new ObjectMapper();
-            JsonNode jsonNode = objectMapper.readTree(jsonString);
-
-            for (JsonNode node : jsonNode) {
-                String question = node.get("question").asText();
-                questions.add(question);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return questions;
-    }
 
     public List<QuestionResponse> getQuestionsByProfession(String profession, UserDetailsImpl user) {
         QuestionResponse questionResponse = new QuestionResponse();
@@ -93,8 +60,21 @@ public class QuestionService {
         return mapper.readValue(json, AnswerEntity.class);
     }
 
+//    public List<GenerateResponse> parseQuestions(String json) throws JsonProcessingException {
+//        return Arrays.asList(mapper.readValue(json, GenerateResponse[].class));
+//    }
+
     public List<GenerateResponse> parseQuestions(String json) throws JsonProcessingException {
-        return Arrays.asList(mapper.readValue(json, GenerateResponse[].class));
+        // Регулярное выражение для поиска JSON-массива
+        Pattern pattern = Pattern.compile("\\[.*\\]", Pattern.DOTALL);
+        Matcher matcher = pattern.matcher(json);
+
+        if (matcher.find()) {
+            String jsonArray = matcher.group();
+            return Arrays.asList(mapper.readValue(jsonArray, GenerateResponse[].class));
+        } else {
+            throw new JsonProcessingException("JSON array not found") {};
+        }
     }
     public List<AnswerResponse> getDialogByQuestion(String question, UserDetailsImpl user) {
         QuestionEntity questionEntity = questionRepository.findByContentAndUser(question, userRepository.findById(user.getId())
