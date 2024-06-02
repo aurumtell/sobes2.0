@@ -65,9 +65,7 @@ public class YandexGPTService {
     @Transactional
     public AnswerResponse sendMessage(AnswerRequest answer, UserDetailsImpl user) throws IOException {
         UserEntity userEntity = userRepository.findById(user.getId()).get();
-
-        if (questionRepository.existsByContentAndUser(answer.getQuestion(), userEntity)) {
-            ChatRequest.CompletionOptions completionOptions = new ChatRequest.CompletionOptions(false, 0.3, 1000);
+         ChatRequest.CompletionOptions completionOptions = new ChatRequest.CompletionOptions(false, 0.3, 1000);
             String system = "Ты — рекрутер. Ты имитируешь собеседование на работу для указанной должности, задавая вопросы, как будто ты потенциальный работодатель. Твоя задача — определить технические навыки кандидата. " +
                     "Ты задал вопрос:" + answer.getQuestion() + " Получил следующий ответ от кандидата:\n" +
                     "\"" + answer.getAnswer() + "\"\n" +
@@ -86,9 +84,6 @@ public class YandexGPTService {
             answerEntity.setAnswerDate(LocalDateTime.now());
             answerRepository.save(answerEntity);
             return new AnswerResponse(answerEntity);
-        } else {
-            throw new MyEntityNotFoundException("question");
-        }
     }
 
     public ChatResponse sendRequest(ChatRequest chatRequest) {
